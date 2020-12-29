@@ -150,7 +150,7 @@ def function8():
 def function9():
     # Create an array of 2, 4, 6, 8, ..., 100.
     
-    a = # write your code here
+    a = np.arange(2,101,2)
   
     return a
 
