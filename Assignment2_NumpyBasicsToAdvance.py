@@ -124,8 +124,8 @@ def function6():
 def function7():
     #  Create an array of zeros with the same shape and type as X. Dont use reshape method
     x = np.arange(4, dtype=np.int64)
-  
-    return #write your code here
+    y = np.zeros_like(x)  
+    return y
 
     """
     Expected Output:
