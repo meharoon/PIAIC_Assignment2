@@ -87,8 +87,8 @@ def function4():
     #Swap columns 1 and 2 in the array arr.
    
     arr = np.arange(9).reshape(3,3)
-  
-    return #wrtie your code here
+    arr[:,[0, 1]] = arr[:,[1, 0]]
+    return arr
     """
     Expected Output:
           array([[1, 0, 2],
@@ -100,7 +100,7 @@ def function4():
 def function5():
     #Create a null vector of size 20 with 4 rows and 5 columns with numpy function
    
-    z = #wrtie your code here
+    z = np.zeros((4,5))
   
     return z
     """
