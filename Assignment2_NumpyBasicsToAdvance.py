@@ -136,8 +136,8 @@ def function7():
 def function8():
     # Create a new array of 2x5 uints, filled with 6.
     
-    x = #write your code here
-  
+    x = x = np.zeros((2,5),np.uint32)
+    x[::,::]=6
     return x
 
      """
