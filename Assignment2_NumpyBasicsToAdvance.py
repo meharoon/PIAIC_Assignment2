@@ -168,7 +168,7 @@ def function10():
     
     arr = np.array([[3,3,3],[4,4,4],[5,5,5]])
     brr = np.array([1,2,3])
-    subt = # write your code here 
+    subt = arr - brr[:,None]
   
     return subt
 
