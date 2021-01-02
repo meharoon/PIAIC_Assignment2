@@ -200,7 +200,6 @@ def function12():
     
     arr = np.array([1,2,3])
     ans = np.r_[np.repeat(arr, 3), np.tile(arr, 3)]  
-  
     return ans
 
      """
@@ -214,7 +213,7 @@ def function13():
     
     
     arr = np.array([2, 6, 1, 9, 10, 3, 27])
-    ans = #write your code here 
+    ans = arr[np.all([arr>5,arr<10], axis= 0)]
   
     return ans
 
