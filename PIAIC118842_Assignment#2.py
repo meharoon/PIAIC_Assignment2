@@ -228,8 +228,8 @@ def function14():
     # Hint use split method
     
     
-    arr = numpy.arange(10, 34, 1) #write reshape code
-    ans = #write your code here 
+    arr = numpy.arange(10, 34, 1).reshape(8,3) 
+    ans = np.split(arr, 4)
   
     return ans
 
