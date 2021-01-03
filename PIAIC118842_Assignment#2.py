@@ -247,7 +247,7 @@ def function15():
     
     
     arr = np.array([[ 8,  2, -2],[-4,  1,  7],[ 6,  3,  9]])
-    ans = #write your code here 
+    ans = arr[np.argsort(arr[:, 1])]
   
     return ans
 
