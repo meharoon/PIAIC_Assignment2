@@ -265,7 +265,7 @@ def function16():
     
     x = np.array([[1], [2], [3]])
     y = np.array([[2], [3], [4]])
-    ans = #write your code here 
+    ans = np.dstack((x,y))
   
     return ans
 
@@ -285,7 +285,7 @@ def function17():
     # otherwise it will be replaced with "NO"
     # Hint: np.where
     arr = np.arange(1,10*10+1).reshape((10,10))
-    return           # Write Your Code HERE
+    return  np.where([(arr%3 == 0) & (arr%5 == 0)], "YES", "NO")
 
 #Excpected Out
 """
@@ -307,7 +307,7 @@ def function18():
     # count values of "students" are exist in "piaic"
     piaic = np.arange(100)
     students = np.array([5,20,50,200,301,7001])
-    x = # Write you code Here
+    x = np.intersect1d(piaic,students).size
     return x
 
     #Expected output: 3
@@ -321,10 +321,10 @@ def function19():
     # then create variable "b" with value equal to 5
     # Now return output as "(X*W)+b:
 
-    X =   # Write your code here
-    W =   # Write your code here 
-    b =   # Write your code here
-    output =    # Write your code here
+    X =   np.arange(1,26).reshape(5,5)
+    W =   X.T
+    b =   5
+    output = X * W + b
 
     #expected output
     """
@@ -343,6 +343,6 @@ def fucntion20():
     def xyz(x):
         return x*2+3-2
 
-    return #Write your Code here
+    return np.abs(abc(x))
 #Expected Output: array([ 3,  5,  7,  9, 11, 13, 15, 17, 19, 21])
 #--------------------------X-----------------------------X-----------------------------X----------------------------X---------------------
